@@ -1,0 +1,17 @@
+package BeanTest::Controller::Public::Search;
+
+use Mojo::Base 'Mojolicious::Controller';
+
+=head1 DESCRIPTION
+
+This is the C<Mojolicious::Controller> for the public search page.
+
+=cut
+
+sub search {
+    my ($self) = @_;
+
+    $self->render(template => 'search');
+}
+
+1;

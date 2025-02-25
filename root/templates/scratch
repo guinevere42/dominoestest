@@ -1,0 +1,21 @@
+ [% PERL %]
+ my $jobs;# = $search_res; 
+ if ($jobs->count == 0) {
+
+print qq{  <p>No Results Fit Your Skills.<p> };
+ }
+
+ while (my $job = $jobs->next) {
+print qq{
+  <div class="post">
+    <h4>
+         $job->title 
+        <br/>
+        <small>(published:  $job->date_published )</small>
+    </h4>
+    <p> $job->description </p>
+  </div>
+};
+ } 
+ [% END %]
+

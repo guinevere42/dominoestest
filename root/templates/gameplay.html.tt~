@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Search</title>
+        <link rel="stylesheet" href="/css/basic.css">
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+    </head>
+    <body>
+        <div class="pure-g">
+          <div class="pure-u-1"> 
+	    [% IF (c.stash.post_saved) %]
+            <h1>[% c.stash.post_saved %]</h1>
+	    [% ELSE %]
+	    <h1> An Error Occurred. </h1>
+	    [% END %]
+
+<form method=post name=gameplay action='[% c.req.headers.host %]/admin'>
+
+<p>Pick a dominoe for [% player %]</p>
+  <p>
+    [% FOREACH doe = c.stash.mydominoes %]
+   <p> <input type=radio name='mydoe' value=[% doe.id %]> [% doe.dots_one %] | [% doe.dots_two %]</p>    
+    [% END %]
+  </p>
+	      <p>
+		[% END %]
+	<p> Play the domino here: </p>
+    [% FOREACH doe = c.stash.board %]
+  <p>
+     <p> <input type=radio name='boarddoe' value=[% doe.id %]> [% doe.dots_one %] | [% doe.dots_two %]</p>    
+  </p>
+    [% END %]
+
+<input type=submit value='Submit'>     
+ </form>
+
+	    
+  [% c.req.headers.host %]
+
+            </div>
+        </div>
+      
+    </body>
+</html>

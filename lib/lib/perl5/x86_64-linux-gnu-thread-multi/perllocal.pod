@@ -1,0 +1,22 @@
+=head2 Sat Feb 22 23:44:51 2025: C<Module> L<Algorithm::Numerical::Shuffle|Algorithm::Numerical::Shuffle>
+
+=over 4
+
+=item *
+
+C<installed into: /srv/political-briefcase.com/guinevere-tech-test-framework/lib/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2009110301>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

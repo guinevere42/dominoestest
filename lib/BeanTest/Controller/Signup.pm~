@@ -1,0 +1,16 @@
+package BeanTest::Controller::Signup;
+
+use Mojo::Base 'Mojolicious::Controller';
+
+=head1 DESCRIPTION
+
+This is the C<Mojolicious::Controller> for the public search page.
+
+=cut
+
+sub signup { # print both search form and list of jobs (paged)
+    my($self, $c) = @_;
+    my $key = $self->param('keyword');
+    my $rs = $self->app->schema->resultset('Jobs');
+    my(@rows);
+}

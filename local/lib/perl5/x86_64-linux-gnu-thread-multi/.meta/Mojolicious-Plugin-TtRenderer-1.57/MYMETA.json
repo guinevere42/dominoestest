@@ -1,0 +1,60 @@
+{
+   "abstract" : "Template Renderer Plugin for Mojolicious",
+   "author" : [
+      "Graham Ollis <plicease@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Module::Build version 0.4003, CPAN::Meta::Converter version 2.133380",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Mojolicious-Plugin-TtRenderer",
+   "no_index" : {
+      "directory" : [
+         "example"
+      ]
+   },
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Module::Build" : "0.28",
+            "Test::More" : "0.94",
+            "perl" : "v5.10.0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0.28",
+            "perl" : "v5.10.0"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "EV" : "0"
+         },
+         "requires" : {
+            "Mojolicious" : "6.33",
+            "POSIX" : "0",
+            "Template" : "2.18",
+            "Template::Provider" : "0",
+            "perl" : "v5.10.0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/plicease/Mojolicious-Plugin-TtRenderer/issues"
+      },
+      "homepage" : "http://perl.wdlabs.com/Mojolicious-Plugin-TtRenderer",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/plicease/Mojolicious-Plugin-TtRenderer.git"
+      }
+   },
+   "version" : "1.57"
+}
